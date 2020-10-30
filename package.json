@@ -1,0 +1,58 @@
+{
+  "name": "yao-ui",
+  "private": true,
+  "version": "0.0.1-20201024.1519",
+  "description": "Personal Vue.js 3.0 UI Toolkit for Web and Mobile",
+  "author": {
+    "name": "jinyaoMa",
+    "email": "jinyao.ma@outlook.com",
+    "url": "https://github.com/jinyaoMa"
+  },
+  "main": "lib/yao-ui.umd.min.js",
+  "scripts": {
+    "font": "node packages/icons/generate.js",
+    "lib": "vue-cli-service build --target lib --name yao-ui --dest lib packages/index.js",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-pwa": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "babel-eslint": "^10.1.0",
+    "core-js": "^3.6.5",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0-0",
+    "font-carrier": "^0.2.0",
+    "register-service-worker": "^1.7.1",
+    "stylus": "^0.54.7",
+    "stylus-loader": "^3.0.2",
+    "vue": "^3.0.0",
+    "vue-router": "^4.0.0-0",
+    "vuex": "^4.0.0-0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
